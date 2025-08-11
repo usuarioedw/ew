@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3metro.css">
+<link rel="stylesheet" href="css/w3flat.css">
+<!--link rel="stylesheet" href="www.w3schools.com/lib/w3-colors-metro.css"-->
 <link rel="stylesheet" href="css/fonts1.css">
 <link rel="stylesheet" href="css/ad3.css">
 <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
@@ -28,15 +31,19 @@ body, html {
   padding: 16px;
 }
 </style>
+
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">PORTAFOLIO</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-blue-grey">PORTAFOLIO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">INICIO</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-blue-grey">Inicio</a>
+      <a href="index2.html" class="w3-bar-item w3-button w3-hover-blue-grey">FrontEnd WebApps</a>
+      <!--a href="#about" class="w3-bar-item w3-button">Sitios Web</a-->
+      <a href="index3.html" class="w3-bar-item w3-button w3-hover-blue-grey">Animaciones</a>
       <!--a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OPCI&Oacute;N 2</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> OPCI&Oacute;N 3</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> OPCI&Oacute;N 4</a--->
@@ -44,16 +51,18 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onClick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium  w3-hover-blue-grey" onClick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar �</a>
-  <a href="#about" onClick="w3_close()" class="w3-bar-item w3-button">INICIO</a>
+<nav class="w3-sidebar w3-bar-block w3-metro-dark-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-hover-blue-grey">Cerrar</a>
+  <a href="index.html" onClick="index.html" class="w3-bar-item w3-button w3-hover-blue">Inicio</a>
+  <a href="index2.html" onClick="index2.html" class="w3-bar-item w3-button w3-hover-blue">FrontEnd WebApps</a>
+  <a href="index3.html" onClick="index3.html" class="w3-bar-item w3-button w3-hover-blue">Animaciones</a>
   <!--a href="#team" onClick="w3_close()" class="w3-bar-item w3-button">HABITACIONES</a>
   <a href="#work" onClick="w3_close()" class="w3-bar-item w3-button">SERVICIOS</a>
   <a href="#pricing" onClick="w3_close()" class="w3-bar-item w3-button">PRECIOS</a>
@@ -63,8 +72,8 @@ body, html {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px"></br></br></br></br>
-    <span class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px #333333;">Animaciones</span></br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Animación Digital</span><br>
+    <span class="w3-jumbo w3-hide-small" style="text-shadow: 2px 2px #333333;">Inicio</span></br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Inicio</span><br>
     <span class="w3-large" style="text-shadow: 2px 2px #333333;">Portafolio de Edgar Ramírez M. Desarrollador Web</span>
     <!--p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Conocer más</a></p--->
   </div> 
@@ -78,97 +87,35 @@ body, html {
   </div-->
 </header>
 
-<!--01 Bloque de video -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
-    <div class="w3-col m8">
-	  <div class="video-responsive">
-  	  	<iframe src="https://www.youtube.com/embed/Kf30SPCRsso?si=pK2WLuuNKWoZtX0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	  </div>	  
-    </div>
-    <div class="w3-col m4">
-      <!--img class="w3-image w3-round-large" src="images/phone_buildings.jpg" alt="Buildings" width="700" height="394"-->
-      <h3>Prueba de video.</h3>
-      <p>Animación de prueba para una introducción a un curso on-line.<br>
-      Año 2021. </p>
-      <!--p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> Descargar folleto</a></p-->
-    </div>
+    <div class="w3-col m6 I6" style="display:flex; justify-content:center; align-items:center;">
+	  <div class="w3-card-4 test" style="width:92%;max-width:300px;">
+  <a href="index2.html" target="_self">
+  <img src="images/apps4.jpg" alt="Avatar" style="width:100%;opacity:0.85">
+  <div class="w3-container">
+  <h4><b>FrontEnd WebApps</b></h4> </a>   
+  <p>En esta sección se muestran algunos trabajos de desarrollo front end en aplicaciones web.</p>    
   </div>
-</div>
-
-<!--02 Bloque de video -->
-<div class="w3-container w3-white" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m4">
-      <h3>Juego de memorama.</h3>
-      <p>Este juego fue realizado utilizando Flash y actionscript. <br>
-      Año 2023. </p>
-      <!--p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> Descargar folleto</a></p-->
+</div>	  
     </div>
-    <div class="w3-col m8 ">
-      <!--img class="w3-image w3-round-large" src="images/phone_buildings.jpg" alt="Buildings" width="700" height="394"-->
-	  <div class="video-responsive">
-	  	<iframe src="https://www.youtube.com/embed/zD2YAZAdA-w?si=GPNVubUcroNv-5Xu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	  </div>
-    </div>
+    <div class="w3-col m6 I6" style="display:flex; justify-content:center; align-items:center;">
+		<div class="w3-card-4 test" style="width:92%;max-width:300px;">
+  <a href="index3.html" target="_self">
+  <img src="images/animaciones1.png" alt="Avatar" style="width:100%;opacity:0.85">
+  <div class="w3-container">
+  <h4><b>Animaciones</b></h4>  </a>  
+  <p>Aquí se encuentran algunas animaciones desarrolladas utilizando flash y actionscript.</p>    
   </div>
-</div>
-
-<!--03 Bloque de video -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m8 ">		
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/OBQsuo7NO8o?si=WptN3S4XWA-xrUpm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <!--p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> Descargar folleto</a></p-->
-    </div>
-    <div class="w3-col m4 ">
-      <!--img class="w3-image w3-round-large" src="images/phone_buildings.jpg" alt="Buildings" width="700" height="394"-->
-      <h3>Intro EvoluciónWeb.</h3>
-      <p>Intro multimedia desarrollada con la tecnología flash, para una página de internet dedicada al desarrollo web.</br>
-		Año 2001.</p>
-
-    </div>
-  </div>
-</div>
-
-<!--04 Bloque de video -->
-<div class="w3-container w3-white" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m4">
-      <h3>Intro empresarial.</h3>
-      <p>Intro multimedia con animaciones, audio, textos, imágenes y formas para promoción empresarial.<br>
-		Año 2001. </p>
-      <!--p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> Descargar folleto</a></p-->
-    </div>
-    <div class="w3-col m8">
-      <!--img class="w3-image w3-round-large" src="images/phone_buildings.jpg" alt="Buildings" width="700" height="394"-->
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/WtE9I0rL7_c?si=jexNUGd-EYLBlA0v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-<!--05 Bloque de video -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m8">
-
-      <!--p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"></i> Descargar folleto</a></p-->
-  	  <iframe width="560" height="315" src="https://www.youtube.com/embed/bgvOG_4RkXY?si=t4JSTf8XE6KopggP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div class="w3-col m4">
-      <!--img class="w3-image w3-round-large" src="images/phone_buildings.jpg" alt="Buildings" width="700" height="394"-->
-      <h3>Animación de bienvenida.</h3>
-      <p>Animación de bienvenida para una Expo, se desarrolló con la tecnología Flash utilizando audio, textos, imágenes y animaciones.</br>
-      Año 2006. </p>
-	  
+		</div>
     </div>
   </div>
 </div>
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+<footer class="w3-center w3-metro-dark-blue w3-padding-64">
+  <a href="#home" class="w3-button w3-blue w3-hover-blue-grey"><i class="fa fa-arrow-up w3-margin-right  w3-hover-blue-grey"></i>Subir</a>
   <!--div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
